@@ -10,16 +10,27 @@
 </head>
 <body>
     <div class="alingg">    
-      <h1>JavaScript API (LVL 1)</h1>
+      <h1>JavaScript API (LVL 2)</h1>
         <p><em>Pokemon API</p>
           <hr/>
                 <div class="blocoMain">
-                  <button class="callAPI btn btn-primary" style="margin: 10px;">Call Poke API</button>
+
+                  <div class="dropdown" style="margin: 10px;">
+                    <select class="btn btn-success dropdown-toggle" id="Acntname" onchange="buttonText()">
+                      <option value="0">Actions</option>
+                      <option value="1">Search a Pokemon</option>
+                      <option value="2">Add Pokemon in your team</option>
+                    </select>
+                  </div>
+                  <input type="text" placeholder="Type Pokemon's name" class="pokeName form-control" id="pokeInput" style="width: 15%;"/> 
+                  <button class="callAPI btn btn-primary" id="btnPoke" style="margin: 10px;">Select a action</button>
+
                 </div>
               <div>
-                <img id="pokeImg" src="" alt="img"/>
+                <img id="pokeImg" src="pokeball.gif" alt="img" class="pokebgit"/>
               </div>
-          <hr/>        
+          <hr/>     
+          <div class="wrapper"></div>   
     </div>
     <script src="script.js"></script>
 </body>
